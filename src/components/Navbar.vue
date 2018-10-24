@@ -20,7 +20,7 @@
             <li><a class="page-scroll" href="#services">Services</a></li>
             <li><a class="page-scroll" href="#features">Features</a></li>
             <li><a class="page-scroll" href="#platform">Platform</a></li>
-            <li><a class="page-scroll" href="#pricing">Pricing</a></li>
+            <li><a class="page-scroll" href="#support">Support</a></li>
             <li><a class="page-scroll" href="#contact">Contact us</a></li>
           </ul>
         </div>
