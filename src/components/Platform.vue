@@ -34,13 +34,13 @@
           <div class="features-list">
             <h1 class="wow fadeInDown" data-wow-delay="0.1s" style="animation-delay: 0.1s; animation-name: none;">Responsive Frontend</h1>
             <p class="wow fadeInDown" data-wow-delay="0.2s" style="animation-delay: 0.2s; animation-name: none;">
-              We rewrote the frontend using Vue.js in order to modernize Peatio abilities and increase security.
+              We rewrote the frontend using ReactJS in order to modernize Peatio abilities and increase usability.
             </p>
             <p class="wow fadeInDown" data-wow-delay="0.2s" style="animation-delay: 0.2s; animation-name: none;">
-              CSS Responsive Design saves you time and money, while enabling your users to conveniently access your content on any device.
+              Our proprietary ReactJS library called Cryptobase saves you time and money on development and allows your users to conveniently access your content on any device.
             </p>
             <p class="wow fadeInDown" data-wow-delay="0.2s" style="animation-delay: 0.2s; animation-name: none;">
-              Peatio.tech specializes in designing beautiful interfaces for content while balancing your application to be consistent as viewport increases.
+              Peatio.tech specializes in designing and building beautiful interfaces for content while balancing your application to be consistent as viewport increases."
             </p>
           </div>
         </div>
