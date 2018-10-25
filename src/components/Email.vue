@@ -8,16 +8,16 @@
           <div class="form">
             <form id="signup" class="formee clearfix" action="#" novalidate="novalidate">
         ￼     <div class="form-name">
-                <input v-model="company_name" name="company_name" id="company_name" type="text" placeholder="Your Company name" style="display: block; width: 100%">
+                <input :disabled="!this.show" v-model="company_website" name="company_website" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%">
               </div>
               <div >
-                <input v-model="email" name="email" id="email" type="text" placeholder="Your Email" style="display: block; width: 100%">
+                <input :disabled="!this.show" v-model="email" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%">
               </div>
         ￼      <div class="form-button">
-                <button v-on:click.prevent="postPost()" class="right button" type="submit" title="Send">Submit</button>
+                <button :disabled="!this.show" v-on:click.prevent="postPost()" class="right button" type="submit" title="Send">Submit</button>
               </div>
               <div v-if="incorrect > 0" class="alert alert-danger error-message" role="alert">
-                Incorrect company name or email address
+                Incorrect url or email address
               </div>
             </form>
           </div>
@@ -25,10 +25,10 @@
         <div v-else>
           <h1>
             <span class="big-text">
-              Thank you!
+              Thank you for contacting us, we will be in touch shortly
             </span><br/>
             <span class="small-text">
-              We will contact you ASAP!
+              Get in touch with our specialists
             </span>
           </h1>
         </div>
@@ -45,7 +45,7 @@
     data () {
       return {
         email: '',
-        company_name: '',
+        company_website: '',
         show: true,
         incorrect: 0,
         errors: []
@@ -60,10 +60,9 @@
           eventAction: 'click',
           eventLabel: ''
         })
-
         axios.post(`/subscribers`, {
           email: this.email,
-          company_name: this.company_name
+          company_website: this.company_website
         })
         .then(response => {
           this.show = false
