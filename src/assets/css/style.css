@@ -1682,6 +1682,18 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	margin: 60px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pricing-list {
+    margin: 45px 30px 45px 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pricing-list {
+    margin: 30px 10px 30px 10px;
+  }
+}
+
 .pricing-section .table-left, .pricing-section .table-right {
 	padding: 20px 20px 50px 20px;
 	margin: 0 auto;
@@ -1756,8 +1768,14 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	margin-top: 20px;
 }
 
-.pricing-section .table-center {
+.pricing-section {
 	margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .table-left, .table-right {
+    height: 534px;
+  }
 }
 
 /* ----- Pricing Section Styling Ends ----- */
