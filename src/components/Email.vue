@@ -2,36 +2,48 @@
   <div class="cta-sub no-color">
     <div class="container">
       <div class="cta-inner">
-        <div v-if="show">
+        <div>
           <h1>Start your Peatio Cloud</h1>
           <p>Please submit your email to receive your peatio.tech demo link.</p>
           <div class="form">
             <form id="signup" class="formee clearfix" action="#" novalidate="novalidate">
-        ￼     <div class="form-name">
-                <input :disabled="!this.show" v-model="company_website" name="company_website" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%">
+              <div v-if="incorrect > 0" class="alert alert-danger error-message alert-box" role="alert">
+                <div class="alert-font text-center">
+                  Incorrect url or email address
+                </div>
               </div>
-              <div >
-                <input :disabled="!this.show" v-model="email" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%">
+              <div v-if="!this.show" class="alert alert-success alert-box">
+                <div class="success-font text-center">
+                  Thank you for contacting us, <br/> we will be in touch shortly
+                </div>
+                <div class="small-text text-center">
+                  Get in touch with our specialists
+                </div>
               </div>
-        ￼      <div class="form-button">
+              <div v-if="incorrect < 1 && this.show" class="alert-box"></div>
+        ￼     <div class="form-name subscribe-form">
+                <div class="form-icon">
+                  <i class="fas fa fa-link fa-1x"></i>
+                </div>
+                <div>
+                  <input :disabled="!this.show" v-model="company_website" name="company_website" class="input-padd" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%;">
+                </div>
+              </div>
+              <div class="form-name subscribe-form">
+                <div class="form-icon">
+                  <i class="fas fa fa-envelope fa-1x"></i>
+                </div>
+                <div>
+                  <input :disabled="!this.show" v-model="email" class="input-padd" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%">
+                </div>
+              </div>
+        ￼     <div class="form-button">
                 <button :disabled="!this.show" v-on:click.prevent="postPost()" class="right button" type="submit" title="Send">Submit</button>
-              </div>
-              <div v-if="incorrect > 0" class="alert alert-danger error-message" role="alert">
-                Incorrect url or email address
               </div>
             </form>
           </div>
         </div>
-        <div v-else>
-          <h1>
-            <span class="big-text">
-              Thank you for contacting us, we will be in touch shortly
-            </span><br/>
-            <span class="small-text">
-              Get in touch with our specialists
-            </span>
-          </h1>
-        </div>
+
         <div id="response"></div>
       </div>
     </div>

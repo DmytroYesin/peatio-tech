@@ -135,7 +135,8 @@ p {
 .error-message {
 	color: #FF3333;
 	font-family: Poppins;
-	margin-top: 5px;
+	margin-top: 5px !important;
+  width: 100% !important;
 }
 
 .success-message {
@@ -627,11 +628,34 @@ font-family: Arial;
 }
 
 .form-name {
+  border-radius: 5px;
 	margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.alert-box {
+  margin-top: -10px !important;
+  margin-bottom: -10px!important;
+  height: 86px;
+  padding: 10px 10px 10px 10px !important;
+}
+
+
+.form-icon {
+  margin-left: 15px;
+  margin-top: 15px;
+  max-height: 16px;
+  color: rgba(0, 0, 0, 0.35);
 }
 
 .form-button {
 	text-align: right;
+}
+
+.input-padd {
+  padding-right: 50px !important;
+  padding-left: 10px !important;
+  background-color: white !important;
 }
 
 .button {
@@ -792,10 +816,12 @@ textarea.form-control:focus {
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
 
-input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; }
-input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; }
-input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
-
+input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; font-weight: 400; text-align: left;}
+input[type="url"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; font-weight: 400; text-align: left;}
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; font-weight: 400; text-align: left;}
+input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; font-weight: 400; text-align: left;}
+input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; font-weight: 400; text-align: left;}
+input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; font-weight: 400; text-align: left;}
 
 
 .signup-form button.btn {
@@ -1830,7 +1856,29 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .small-text {
-	font-size: 28px;
+	font-size: 14px;
+}
+
+.success-font {
+  font-size: 21px;
+  margin-bottom: 8px !important;
+}
+
+@media only screen and (max-width: 352px) {
+  .success-font {
+    font-size: 18px;
+  }
+}
+
+.alert-font {
+  font-size: 21px;
+  margin-top: 21px !important;
+}
+
+@media only screen and (max-width: 334px) {
+  .alert-font {
+    margin-top: 10px !important;
+  }
 }
 
 .cta-sub .cta-inner h1 {
@@ -1850,11 +1898,13 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	font-weight: 300;
 	line-height: 1.4;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .subscribe-form {
 	text-align: left;
+  background-color: white;
+  display: flex;
 }
 /*
 .subscribe-form .mail {
@@ -1884,7 +1934,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
   font-size: 0.9em;
   height: 40px;
   border: 2px solid;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 5px 5px 5px;
   margin: 0;
   padding: 0 25px 0 25px;
 	border-color: #FFFFFF;
@@ -2341,9 +2391,9 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	}
 
  .formee input {
-	 text-align: center;
+	 text-align: start;
    padding: 0 0 0 0;
-   border-radius: 5px 0 0 5px;
+   border-radius: 5px 5px 5px 5px;
  }
 
  .formee .right {
