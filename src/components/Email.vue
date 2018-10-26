@@ -7,12 +7,12 @@
           <p>Please submit your email to receive your peatio.tech demo link.</p>
           <div class="form">
             <form id="signup" class="formee clearfix" action="#" novalidate="novalidate">
-              <div v-if="incorrect > 0" class="alert alert-danger error-message alert-box" role="alert">
+              <div v-if="incorrect > 0" class="alert alert-danger error-message alert-box" role="alert" style="width: 100%; margin-top: -10px;">
                 <div class="alert-font text-center">
                   Incorrect url or email address
                 </div>
               </div>
-              <div v-if="!this.show" class="alert alert-success alert-box">
+              <div v-if="!this.show" class="alert alert-success alert-box" style="width: 100%; margin-top: -10px;">
                 <div class="success-font text-center">
                   Thank you for contacting us, <br/> we will be in touch shortly
                 </div>
@@ -26,7 +26,7 @@
                   <i class="fas fa fa-link fa-1x"></i>
                 </div>
                 <div>
-                  <input :disabled="!this.show" v-model="company_website" name="company_website" class="input-padd" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%;">
+                  <input :disabled="!this.show" v-model="company_website" name="company_website" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%; padding-left: 10px; padding-right: 50px; background-color: white;">
                 </div>
               </div>
               <div class="form-name subscribe-form">
@@ -34,7 +34,7 @@
                   <i class="fas fa fa-envelope fa-1x"></i>
                 </div>
                 <div>
-                  <input :disabled="!this.show" v-model="email" class="input-padd" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%">
+                  <input :disabled="!this.show" v-model="email" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%; padding-left: 10px; padding-right: 50px; background-color: white;">
                 </div>
               </div>
         ￼     <div class="form-button">

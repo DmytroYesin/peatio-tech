@@ -135,8 +135,7 @@ p {
 .error-message {
 	color: #FF3333;
 	font-family: Poppins;
-	margin-top: 5px !important;
-  width: 100% !important;
+	margin-top: 5px;
 }
 
 .success-message {
@@ -634,10 +633,10 @@ font-family: Arial;
 }
 
 .alert-box {
-  margin-top: -10px !important;
-  margin-bottom: -10px!important;
+  margin-top: -10px;
+  margin-bottom: -10px;
   height: 86px;
-  padding: 10px 10px 10px 10px !important;
+  padding: 10px 10px 10px 10px;
 }
 
 
@@ -650,12 +649,6 @@ font-family: Arial;
 
 .form-button {
 	text-align: right;
-}
-
-.input-padd {
-  padding-right: 50px !important;
-  padding-left: 10px !important;
-  background-color: white !important;
 }
 
 .button {
@@ -1861,23 +1854,26 @@ input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholde
 
 .success-font {
   font-size: 21px;
-  margin-bottom: 8px !important;
+  margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 352px) {
   .success-font {
     font-size: 18px;
   }
+  .small-text {
+	  font-size: 13px;
+  }
 }
 
 .alert-font {
   font-size: 21px;
-  margin-top: 21px !important;
+  margin-top: 21px;
 }
 
 @media only screen and (max-width: 334px) {
   .alert-font {
-    margin-top: 10px !important;
+    margin-top: 12px;
   }
 }
 
