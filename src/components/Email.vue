@@ -4,7 +4,7 @@
       <div class="cta-inner">
         <div v-if="show">
           <h1>Start your Peatio Cloud</h1>
-          <p>Please submit your email to receive your peatio.tech demo link.</p>
+          <p>Get in touch with our specialists.</p>
           <div class="form">
             <form id="signup" class="formee clearfix" action="#" novalidate="novalidate">
         ￼     <div class="form-name">
@@ -13,8 +13,8 @@
               <div >
                 <input v-model="email" name="email" id="email" type="text" placeholder="Your Email" style="display: block; width: 100%">
               </div>
-        ￼      <div class="form-button">
-                <button v-on:click.prevent="postPost()" class="right button" type="submit" title="Send">Submit</button>
+        ￼      <div class="form-button software">
+                <button v-on:click.prevent="postPost()" class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" type="submit" title="Send">Contact Us</button>
               </div>
               <div v-if="incorrect > 0" class="alert alert-danger error-message" role="alert">
                 Incorrect company name or email address
