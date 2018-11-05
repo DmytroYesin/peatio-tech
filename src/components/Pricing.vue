@@ -4,9 +4,9 @@
       <div class="pricing-intro">
         <h1 class="wow fadeInDown" data-wow-delay="0s" style="animation-delay: 0s; animation-name: none;">Our Support Plans</h1>
         <p class="wow fadeInDown" data-wow-delay="0.2s" style="animation-delay: 0.2s; animation-name: none;">
-          Our plans includes dedicated Peatio installation and configuration for your needs<br class="hidden-xs">
-          Moreover they include continuous software maintenance, security upgrades, server monitoring and support.<br class="hidden-xs">
-          We also provide software development services for frontend and also new blockchain integration.
+          Our support includes dedicated Peatio deployment and configuration for your business needs.<br class="hidden-xs">
+          Moreover we provide continuous software maintenance, security upgrades, server monitoring and support.<br class="hidden-xs">
+          We also provide custom software development services and new blockchains integration.
         </p>
       </div>
 
