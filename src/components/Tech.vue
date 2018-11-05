@@ -3,7 +3,7 @@
     <div class="pitch-intro">
       <h1 class="wow fadeInDown" data-wow-delay="0.2s" style="animation-delay: 0.2s; animation-name: none;">Why Peatio.tech ?</h1>
       <p class="wow fadeInDown" data-wow-delay="0.2s" style="animation-delay: 0.2s; animation-name: none;">
-        Peatio.tech are on a mission to build a more accessible and fair financial future using Peatio. Our technology stack empowers millions across the globe to authenticate and transact immediately and without costly intermediaries.
+        Peatio.tech's mission is to build more open, accessible and fair financial future using Peatio. Our technology stack empowers hundreds of Blockchain projects with millions of users across the globe to perform authentication and transactions without costly intermediaries
       </p>
     </div>
 
