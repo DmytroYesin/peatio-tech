@@ -2,36 +2,48 @@
   <div class="cta-sub no-color">
     <div class="container">
       <div class="cta-inner">
-        <div v-if="show">
+        <div>
           <h1>Start your Peatio Cloud</h1>
-          <p>Please submit your email to receive your peatio.tech demo link.</p>
+          <p>Get in touch with our specialists.</p>
           <div class="form">
             <form id="signup" class="formee clearfix" action="#" novalidate="novalidate">
-        ￼     <div class="form-name">
-                <input v-model="company_name" name="company_name" id="company_name" type="text" placeholder="Your Company name" style="display: block; width: 100%">
+              <div v-if="incorrect > 0" class="alert alert-danger error-message alert-box" role="alert" style="width: 100%; margin-top: -10px;">
+                <div class="alert-font text-center">
+                  Incorrect url or email address
+                </div>
               </div>
-              <div >
-                <input v-model="email" name="email" id="email" type="text" placeholder="Your Email" style="display: block; width: 100%">
+              <div v-if="!this.show" class="alert alert-success alert-box" style="width: 100%; margin-top: -10px;">
+                <div class="success-font text-center">
+                  Thank you for contacting us, <br/> we will be in touch shortly
+                </div>
+                <div class="small-text text-center">
+                  Get in touch with our specialists
+                </div>
               </div>
-        ￼      <div class="form-button">
-                <button v-on:click.prevent="postPost()" class="right button" type="submit" title="Send">Submit</button>
+              <div v-if="incorrect < 1 && this.show" class="alert-box"></div>
+        ￼     <div class="form-name subscribe-form">
+                <div class="form-icon">
+                  <i class="fas fa fa-link fa-1x"></i>
+                </div>
+                <div>
+                  <input :disabled="!this.show" v-model="company_website" name="company_website" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%; padding-left: 10px; padding-right: 50px; background-color: white;">
+                </div>
               </div>
-              <div v-if="incorrect > 0" class="alert alert-danger error-message" role="alert">
-                Incorrect company name or email address
+              <div class="form-name subscribe-form">
+                <div class="form-icon">
+                  <i class="fas fa fa-envelope fa-1x"></i>
+                </div>
+                <div>
+                  <input :disabled="!this.show" v-model="email" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%; padding-left: 10px; padding-right: 50px; background-color: white;">
+                </div>
+              </div>
+        ￼     <div class="form-button software">
+                <button :disabled="!this.show" v-on:click.prevent="postPost()" class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" type="submit" title="Send">Contact Us</button>
               </div>
             </form>
           </div>
         </div>
-        <div v-else>
-          <h1>
-            <span class="big-text">
-              Thank you!
-            </span><br/>
-            <span class="small-text">
-              We will contact you ASAP!
-            </span>
-          </h1>
-        </div>
+
         <div id="response"></div>
       </div>
     </div>
@@ -45,7 +57,7 @@
     data () {
       return {
         email: '',
-        company_name: '',
+        company_website: '',
         show: true,
         incorrect: 0,
         errors: []
@@ -60,10 +72,9 @@
           eventAction: 'click',
           eventLabel: ''
         })
-
         axios.post(`/subscribers`, {
           email: this.email,
-          company_name: this.company_name
+          company_website: this.company_website
         })
         .then(response => {
           this.show = false

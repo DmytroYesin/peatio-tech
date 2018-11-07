@@ -12,10 +12,10 @@
           <br class="hidden-xs">Peatio.tech - Peatio configuration and installation professionals
         </p>
           <div class="row">
-            <div class="col-md-4"><a class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" href="https://github.com/rubykube/peatio" target="blank" style="animation-delay: 0.2s; animation-name: fadeInDown;">Peatio.tech GitHub</a></div>
-            <div class="col-md-4"><a class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" href="https://www.rubykube.io" target="blank" style="animation-delay: 0.2s; animation-name: fadeInDown;">Community solutions</a></div>
             <div class="col-md-4"><a class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" href="https://peatio.tech/#pricing" target="blank" style="animation-delay: 0.2s; animation-name: fadeInDown;">Enterprise solutions</a></div>
-          </div>    
+            <div class="col-md-4"><a class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" href="https://www.rubykube.io" target="blank" style="animation-delay: 0.2s; animation-name: fadeInDown;">Community solutions</a></div>
+            <div class="col-md-4"><a class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" href="https://github.com/rubykube/peatio" target="blank" style="animation-delay: 0.2s; animation-name: fadeInDown;">Peatio.tech GitHub</a></div>
+          </div>
       </div>
     </div>
   </div>
