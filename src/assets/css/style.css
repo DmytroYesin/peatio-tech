@@ -454,6 +454,45 @@ p {
 	margin: 0 0 50px 0;
 }
 
+.btn-contact {
+  font-family: Roboto;
+  color: #FFFFFF;
+  background-color: #212f3e;
+  border-radius: 20px;
+  height: 40px;
+  box-shadow: 0 0 1px transparent;
+  outline: none;
+  border: 0px solid #FFF;
+  width: 100%;
+  transition: .5s;
+  max-width: 385px;
+}
+
+.btn-contact:hover {
+  color: #FFFFFF;
+  background-color: #304154;
+  border-radius: 20px;
+}
+
+.btn-contact-off:hover {
+  background-color: #212f3e;
+}
+
+.btn-support {
+  font-family: Arial;
+  padding: 10px 25px 10px 25px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  vertical-align: center;
+  background-color: #212f3e;
+  border-radius: 20px;
+  height: 40px;
+  margin: 0;
+  outline: none;
+  border: 0px solid #FFF;
+}
 
 .btn-action {
  font-family: Roboto;

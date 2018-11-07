@@ -26,7 +26,7 @@
                   <i class="fas fa fa-link fa-1x"></i>
                 </div>
                 <div>
-                  <input :disabled="!this.show" v-model="company_website" name="company_website" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%; padding-left: 10px; padding-right: 50px; background-color: white;">
+                  <input :disabled="!this.show" v-model="company_website" name="company_website" id="company_website" type="url" placeholder="Your Company Website" style="display: block; width: 100%; padding-left: 10px; padding-right: 30px; background-color: white;">
                 </div>
               </div>
               <div class="form-name subscribe-form">
@@ -34,11 +34,11 @@
                   <i class="fas fa fa-envelope fa-1x"></i>
                 </div>
                 <div>
-                  <input :disabled="!this.show" v-model="email" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%; padding-left: 10px; padding-right: 50px; background-color: white;">
+                  <input :disabled="!this.show" v-model="email" name="email" id="email" type="text" placeholder="Your Company Email" style="display: block; width: 100%; padding-left: 10px; padding-right: 30px; background-color: white;">
                 </div>
               </div>
-        ￼     <div class="form-button software">
-                <button :disabled="!this.show" v-on:click.prevent="postPost()" class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" type="submit" title="Send">Contact Us</button>
+        ￼     <div style="margin-top: -15px">
+                <button :disabled="!this.show" v-on:click.prevent="postPost()" v-bind:class="{ 'btn-contact-off': !this.show }" class="button btn-contact" data-wow-delay="0.2s" type="submit" title="Send">Contact Us</button>
               </div>
             </form>
           </div>
