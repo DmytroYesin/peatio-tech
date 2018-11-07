@@ -10,27 +10,7 @@
         </p>
       </div>
 
-      <div class="col-sm-4">
-        <div class="table-left wow fadeInDown my-0" data-wow-delay="0.4s" style="animation-delay: 0.4s; animation-name: none;">
-          <div class="icon">
-            <img src="../assets/img/cloud.png" alt="Icon">
-          </div>
-          <div class="pricing-details">
-            <h2>Peatio Cloud</h2>
-            <div class="pricing-list">
-              <ul>
-                <li>&bull; Fastest time to market</li>
-                <li>&bull; Hosted on our GCP</li>
-                <li>&bull; Starting with 3 cluster nodes</li>
-                <li>&bull; Front-End customization</li>
-                <li>&bull; Most popular crypto-currencies</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <div class="table-right table-center wow fadeInDown my-0" data-wow-delay="0.6s" style="animation-delay: 0.6s; animation-name: none;">
           <div class="icon">
             <img src="../assets/img/peatio_cloud.jpg" alt="Icon">
@@ -51,7 +31,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <div class="table-right wow fadeInDown my-0" data-wow-delay="0.6s" style="animation-delay: 0.6s; animation-name: none;">
           <div class="icon">
             <img src="../assets/img/development.svg" alt="Icon">
