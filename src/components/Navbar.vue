@@ -23,6 +23,7 @@
             <li><a class="page-scroll" href="#features">Features</a></li>
             <li><a class="page-scroll" href="#platform">Platform</a></li>
             <li><a class="page-scroll" href="#support">Support</a></li>
+            <li><a class="page-scroll" href="#about">About Us</a></li>
           </ul>
         </div>
       </div>

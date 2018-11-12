@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" id="about">
     <div class="container">
       <div class="col-md-6">
         <img src="../assets/img/peatio-logo.png" width="50%" height="auto" alt="Image">
