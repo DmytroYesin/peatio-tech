@@ -624,6 +624,7 @@ font-family: Arial;
   margin-top: -10px;
   margin-bottom: -10px;
   height: 86px;
+  max-width: 385px;
   padding: 10px 10px 10px 10px;
 }
 
@@ -1848,27 +1849,33 @@ input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholde
 }
 
 .success-font {
-  font-size: 21px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  margin-top: 14px;
 }
+
+.input-width {
+  width: 330px !important;
+}
+
 
 @media only screen and (max-width: 352px) {
   .success-font {
     font-size: 18px;
   }
-  .small-text {
-	  font-size: 13px;
-  }
 }
 
 .alert-font {
-  font-size: 21px;
-  margin-top: 21px;
+  font-size: 18px;
+  margin-top: 14px;
 }
 
-@media only screen and (max-width: 334px) {
+@media only screen and (max-width: 394px) {
   .alert-font {
-    margin-top: 12px;
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .input-width {
+  width: 100% !important;
   }
 }
 
@@ -1896,6 +1903,7 @@ input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholde
 	text-align: left;
   background-color: white;
   display: flex;
+  max-width: 385px;
 }
 /*
 .subscribe-form .mail {
