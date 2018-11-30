@@ -34,6 +34,14 @@
                   <input :disabled="incorrect < 1 && !this.show" v-model="email" name="email" id="email" class="input-width" type="text" placeholder="Your Company Email" style="display: block; padding-left: 10px; padding-right: 10px; background-color: white;">
                 </div>
               </div>
+              <div class="form-name subscribe-form">
+                <div class="form-icon">
+                  <i class="fas fa fa-user fa-1x"></i>
+                </div>
+                <div>
+                  <input :disabled="incorrect < 1 && !this.show" v-model="contact_name" maxlength="100" name="contact_name" id="contact_name" class="input-width" type="text" placeholder="Your Full Name" style="display: block; padding-left: 10px; padding-right: 10px; background-color: white;" required>
+                </div>
+              </div>
         ￼     <div class="form-button software">
                 <button :disabled="incorrect < 1 && !this.show" v-on:click.prevent="postPost()" class="btn btn-primary btn-action page-scroll mt-3 btn-block" data-wow-delay="0.2s" type="submit" title="Send">Contact Us</button>
               </div>
@@ -55,6 +63,7 @@
       return {
         email: '',
         company_website: '',
+        contact_name: '',
         show: true,
         incorrect: 0,
         errors: []
@@ -71,7 +80,8 @@
         })
         axios.post(`/subscribers`, {
           email: this.email,
-          company_website: this.company_website
+          company_website: this.company_website,
+          contact_name: this.contact_name
         })
         .then(response => {
           this.show = false
